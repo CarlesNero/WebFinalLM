@@ -1,0 +1,138 @@
+:root {
+  --verdePrincipal: #1e6d68;
+  --light: #f2e8dc;
+  --darkAccdent: #261c14;
+  --creme: #d9a59a;
+  --brown: #73403c;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  top: 0;
+  backdrop-filter: blur(10px);
+
+  & .navbar-brand {
+    color: var(--light);
+    font-size: 20px;
+  }
+}
+
+.actualNav {
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.equis {
+  width: 20px;
+  cursor: pointer;
+  transition: 1s all ease;
+}
+
+.equis:hover {
+  transform: rotate(135deg);
+}
+
+main {
+  position: relative;
+}
+body {
+  height: 100vh;
+  background-color: var(--light);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    -45deg,
+    var(--verdePrincipal),
+    var(--creme),
+    var(--verdePrincipal)
+  );
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.menuList {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  color: var(--light);
+  font-size: 30px;
+  padding: 2rem;
+  text-align: center;
+  justify-content: center;
+  gap: 2rem;
+  top: 0;
+}
+
+#menu {
+  color: red;
+  text-decoration: none;
+  height: 100vh;
+
+  & li a {
+    text-decoration: none;
+    color: var(--light);
+  }
+
+  & li a:hover {
+    color: var(--darkAccdent);
+  }
+}
+
+.hide {
+  display: flex;
+}
+
+#hero {
+  height: 895px;
+}
+
+.heroImage {
+  overflow: hidden;
+  height: 100%;
+  border-radius: 2px;
+  border: 2px solid var(--light);
+
+  & img {
+    object-fit: cover;
+    width: 100%;
+    padding-bottom: 6rem;
+  }
+}
+
+.imgContainer {
+  width: 100%;
+}
+
+.btn,
+.input-group-text {
+  background-color: var(--verdePrincipal);
+  color: var(--light);
+  border-radius: 1px;
+  border: 2px solid var(--light);
+}
+
+.input-group-text::placeholder {
+  color: var(--light);
+}
