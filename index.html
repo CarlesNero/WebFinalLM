@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>TheFinalWeb</title>
+		<title>FalconTech</title>
 		<link
 			rel="shortcut icon"
 			href="media/images/equis.svg"
@@ -16,13 +16,17 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="styles/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+		/>
 	</head>
 	<body>
 		<header>
 			<nav class="d-flex align-items-center justify-content-between p-3 px-5">
 				<div class="actualNav">
 					<div>
-						<a class="navbar-brand" href="#">TheFinalWeb</a>
+						<a class="navbar-brand" href="#">FalconTech</a>
 					</div>
 					<div onclick="mostrarMenu()">
 						<img
@@ -38,7 +42,7 @@
 					<li><a href="#carouselExample">Galería</a></li>
 					<li><a href="#faqs">FAQs</a></li>
 					<li><a href="#reviews">Opiniones</a></li>
-					<li><a href="#price">Precios</a></li>
+					<li><a href="#pricing">Precios</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -59,7 +63,7 @@
 						incomparable. Perfecto para largas sesiones de uso, combina estilo y
 						funcionalidad en un dispositivo imprescindible para tu setup.
 					</p>
-					<div class="email d-flex gap-2 h-3">
+					<div class="email d-flex gap-2 h-3 flex-column flex-lg-row">
 						<input
 							type="text"
 							name=""
@@ -79,7 +83,7 @@
 					</div>
 				</div>
 			</section>
-			<section id="carouselExample" class="carousel slide my-5 ">
+			<section id="carouselExample" class="carousel slide my-5">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<img
@@ -120,9 +124,12 @@
 					<span class="visually-hidden">Next</span>
 				</button>
 			</section>
-			<section id="faqs" class="container-fluid p-5 my-5 d-flex flex-lg-row flex-column gap-5 gap-md-0">
+			<section
+				id="faqs"
+				class="container-fluid p-5  d-flex flex-lg-row flex-column gap-5 gap-md-0"
+			>
 				<div class="infoFaq col-lg-6 col-12">
-					<h1>FAQs</h1>
+					<h1 >FAQs</h1>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
 						placeat odio! Itaque unde officia iste nam, earum facilis tempore
@@ -130,44 +137,296 @@
 					</p>
 					<button class="btn">Contact</button>
 				</div>
-        <div class="accordion accordion-flush col-lg-6 col-12" id="accordionFlushExample">
-          <div class="accordion-item bg-transparent">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                ¿Cuál es la diferencia entre un ratón gamer y un ratón estándar?
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse bg-transparent" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body bg-transparent">Los ratones gamer están diseñados específicamente para satisfacer las necesidades de los jugadores, ofreciendo características que no se encuentran en los ratones estándar.</div>
-            </div>
-          </div>
-          <div class="accordion-item bg-transparent">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                ¿Cómo elegir el mejor ratón gamer para mis necesidades?
-              </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse bg-transparent" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body bg-transparent">Elegir el mejor ratón gamer depende de varios factores, incluyendo el tipo de juegos que juegas, tu estilo de agarre y tus preferencias personales. </div>
-            </div>
-          </div>
-          <div class="accordion-item bg-transparent">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                ¿Qué importancia tiene la tasa de sondeo en un ratón gamer?
-              </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse bg-transparent" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body bg-transparent"> La tasa de sondeo (polling rate) es la frecuencia con la que el ratón reporta su posición al ordenador, medida en hercios (Hz). Una tasa de sondeo más alta significa que el ratón reporta su posición más frecuentemente, lo que puede resultar en una respuesta más rápida y precisa en el juego. Las tasas de sondeo comunes en ratones gamer son 125 Hz, 250 Hz, 500 Hz y 1000 Hz.</div>
-            </div>
-          </div>
+				<div
+					class="accordion accordion-flush col-lg-6 col-12"
+					id="accordionFlushExample"
+				>
+					<div class="accordion-item bg-transparent">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed bg-transparent"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseOne"
+								aria-expanded="false"
+								aria-controls="flush-collapseOne"
+							>
+								¿Cuál es la diferencia entre un ratón gamer y un ratón estándar?
+							</button>
+						</h2>
+						<div
+							id="flush-collapseOne"
+							class="accordion-collapse collapse bg-transparent"
+							data-bs-parent="#accordionFlushExample"
+						>
+							<div class="accordion-body bg-transparent">
+								Los ratones gamer están diseñados específicamente para
+								satisfacer las necesidades de los jugadores, ofreciendo
+								características que no se encuentran en los ratones estándar.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item bg-transparent">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed bg-transparent"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseTwo"
+								aria-expanded="false"
+								aria-controls="flush-collapseTwo"
+							>
+								¿Cómo elegir el mejor ratón gamer para mis necesidades?
+							</button>
+						</h2>
+						<div
+							id="flush-collapseTwo"
+							class="accordion-collapse collapse bg-transparent"
+							data-bs-parent="#accordionFlushExample"
+						>
+							<div class="accordion-body bg-transparent">
+								Elegir el mejor ratón gamer depende de varios factores,
+								incluyendo el tipo de juegos que juegas, tu estilo de agarre y
+								tus preferencias personales.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item bg-transparent">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed bg-transparent"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseThree"
+								aria-expanded="false"
+								aria-controls="flush-collapseThree"
+							>
+								¿Qué importancia tiene la tasa de sondeo en un ratón gamer?
+							</button>
+						</h2>
+						<div
+							id="flush-collapseThree"
+							class="accordion-collapse collapse bg-transparent"
+							data-bs-parent="#accordionFlushExample"
+						>
+							<div class="accordion-body bg-transparent">
+								La tasa de sondeo (polling rate) es la frecuencia con la que el
+								ratón reporta su posición al ordenador, medida en hercios (Hz).
+								Una tasa de sondeo más alta significa que el ratón reporta su
+								posición más frecuentemente, lo que puede resultar en una
+								respuesta más rápida y precisa en el juego. Las tasas de sondeo
+								comunes en ratones gamer son 125 Hz, 250 Hz, 500 Hz y 1000 Hz.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="reviews" class="container-fluid px-5 my-5">
+				<h1 class="py-5" style="border-top: 1px solid rgba(148, 147, 147, 0.699);">Customer Testimonials</h1>
+				<p>Las reviews de nuestros clientes</p>
+
+				<div class="reviews col-12 d-flex gap-3 flex-column flex-lg-row">
+					<div class="card col-12 col-lg-4 bg-transparent">
+						<div class="card-header">
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+						</div>
+						<div class="card-body">
+							<blockquote class="blockquote mb-0">
+								<p>
+									A well-known quote, contained in a blockquote element.Compré
+									el Logitech G502 HERO hace dos meses y estoy más que
+									satisfecho con mi compra. La precisión de su sensor HERO 25K
+									es increíble, especialmente para juegos FPS como
+									Counter-Strike. Los botones adicionales son muy útiles y están
+									perfectamente ubicados para accesos rápidos. Además, la
+									posibilidad de ajustar el peso del ratón ha mejorado
+									significativamente mi comodidad durante largas sesiones de
+									juego. Sin duda, uno de los mejores ratones gamer que he
+									probado.
+								</p>
+								<p class="blockquote-footer mt-3">
+									Razer DeathAdder V2
+									<cite title="Source Title">Reseña de María L.</cite>
+								</p>
+							</blockquote>
+						</div>
+					</div>
+					<div class="card col-12 col-lg-4 bg-transparent">
+						<div class="card-header">
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star"></i>
+						</div>
+						<div class="card-body">
+							<blockquote class="blockquote mb-0">
+								<p>
+									He estado usando el Razer DeathAdder V2 durante unas semanas y
+									estoy muy contenta con su rendimiento. La ergonomía es
+									excelente y se ajusta perfectamente a mi mano, lo que es
+									esencial para evitar fatiga durante largas horas de juego. El
+									sensor óptico Focus+ es extremadamente preciso y la
+									personalización de los botones es fácil de configurar. Mi
+									única queja es que la iluminación RGB podría ser un poco más
+									brillante. Aparte de eso, es un ratón fantástico para
+									cualquier tipo de juego.
+								</p>
+								<p class="blockquote-footer mt-3">
+									SteelSeries Rival 600
+									<cite title="Source Title">Reseña de Carlos M.</cite>
+								</p>
+							</blockquote>
+						</div>
+					</div>
+					<div class="card col-12 col-lg-4 bg-transparent">
+						<div class="card-header">
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-fill"></i>
+							<i class="bi bi-star-half"></i>
+						</div>
+						<div class="card-body">
+							<blockquote class="blockquote mb-0 ">
+								<p>
+									El SteelSeries Rival 600 ha superado todas mis expectativas.
+									El sistema de pesos ajustables me permite personalizar el
+									ratón exactamente a mi gusto, y el sensor dual ofrece una
+									precisión impresionante. Es especialmente útil en juegos MOBA
+									donde cada movimiento cuenta. Los materiales y el diseño son
+									de alta calidad, y el software SteelSeries Engine es intuitivo
+									y fácil de usar. Definitivamente, recomendaría este ratón a
+									cualquier jugador serio que busque mejorar su experiencia de
+									juego.
+								</p>
+								<p class="blockquote-footer mt-3">
+									Logitech G502 HERO
+									<cite title="Source Title">Reseña de Juan P.</cite>
+								</p>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="pricing" class="container-fluid px-5 mx-auto mb-5" >
+				<h1 class="py-5" style="border-top: 1px solid rgba(148, 147, 147, 0.699);">Pricing</h1>
+				<div class="versiones d-flex gap-2 mx-auto justify-content-center flex-column flex-lg-row">
+					<div
+						class="card col-lg-5 col-12 bg-transparent d-flex flex-column flex-lg-row gap-2"
+					>
+						<div class="card-body d-flex flex-column gap-2 align-items-center">
+							<h3 class="card-title">Versión base</h3>
+							<p class="card-text">Características:</p>
+
+							<ul class="d-flex flex-column gap-2">
+								<li>
+									Sensor Óptico de Alta Precisión: Sensor óptico de 6,400 DPI
+									ajustable en cuatro niveles (800/1600/3200/6400), ideal para
+									una variedad de juegos.
+								</li>
+								<li>
+									Botones Programables: 5 botones programables que permiten
+									configurar acciones rápidas y macros personalizadas.
+								</li>
+								<li>
+									Ergonomía Básica: Diseño ergonómico ambidiestro con agarre
+									texturizado para mayor comodidad durante sesiones de juego
+									prolongadas.
+								</li>
+								<li>
+									Iluminación LED: Iluminación LED en 3 colores preestablecidos
+									(rojo, azul, verde) para una apariencia atractiva.
+								</li>
+								<li>
+									Tasa de Sondeo: Tasa de sondeo de 500 Hz, ofreciendo una
+									respuesta rápida y precisa.
+								</li>
+								<li>
+									Compatibilidad: Compatible con Windows y macOS, sin necesidad
+									de drivers adicionales.
+								</li>
+							</ul>
+
+							<h4 class="card-text text-center">89.99€</h4>
+							<a href="#" class="btn w-lg-25 w-100">Comprar</a>
+						</div>
+					</div>
+          <div
+						class="card col-lg-5 col-12 bg-transparent d-flex flex-column flex-lg-row gap-2"
+					>
+						<div class="card-body d-flex flex-column gap-2 align-items-center">
+							<h3 class="card-title">Versión base</h3>
+							<p class="card-text">Características:</p>
+
+							<ul class="d-flex flex-column gap-2">
+								<li>
+									Sensor Óptico de Alta Precisión: Sensor óptico de 6,400 DPI
+									ajustable en cuatro niveles (800/1600/3200/6400), ideal para
+									una variedad de juegos.
+								</li>
+								<li>
+									Botones Programables: 5 botones programables que permiten
+									configurar acciones rápidas y macros personalizadas.
+								</li>
+								<li>
+									Ergonomía Básica: Diseño ergonómico ambidiestro con agarre
+									texturizado para mayor comodidad durante sesiones de juego
+									prolongadas.
+								</li>
+								<li>
+									Iluminación LED: Iluminación LED en 3 colores preestablecidos
+									(rojo, azul, verde) para una apariencia atractiva.
+								</li>
+								<li>
+									Tasa de Sondeo: Tasa de sondeo de 500 Hz, ofreciendo una
+									respuesta rápida y precisa.
+								</li>
+								<li>
+									Compatibilidad: Compatible con Windows y macOS, sin necesidad
+									de drivers adicionales.
+								</li>
+							</ul>
+
+							<h4 class="card-text text-center">89.99€</h4>
+							<a href="#" class="btn w-lg-25 w-100">Comprar</a>
+						</div>
+					</div>
+				</div>
+			</section>
+      <section class="d-flex flex-column gap-3" id="preFooter">
+
+        <div class="imagenFooter"></div>
+        <div class="textoImagenFooter">
+        <h1 class="mt-5 text-center">FalconTech</h1>
+
+        <p class="mx-5 py-2">En FalconTech, nos dedicamos a llevar tu experiencia de juego al siguiente nivel. Desde nuestros inicios, hemos trabajado incansablemente para desarrollar tecnología de punta que satisface las necesidades tanto de jugadores casuales como de los eSports más exigentes. Nuestro compromiso con la excelencia se refleja en cada uno de nuestros productos, diseñados con precisión y pasión para ofrecerte una ventaja competitiva en cada partida.</p>
+      </div>
+      </section>
+      <footer class="p-5 d-flex flex-column align-items-center gap-5">
+        <img src="media/images/equis.svg" class="mx-auto" alt="" style="width: 2rem;">
+        <div class="links d-flex justify-content-evenly w-100 px-5 pb-3 flex-column flex-md-row text-center gap-2">
+          <a class="text-white" href="#">Marca</a>
+          <a class="text-white" href="#">Redes</a>
+          <a class="text-white" href="#">Contacto</a>
+          <a class="text-white" href="#">Trabaja con nosotros</a>
         </div>
 
-			</section>
-      <section id="reviews container-fluid p-5 my-5">
-        <h1>Customer Testimonials</h1>
-        <p>Las reviews de nuestros clientes</p>
-      </section>
+        <div class="terms d-flex justify-content-between w-100 flex-column flex-md-row text-center">
+          <div class="copy">
+            <p>© 2024 NeroC. All rights reserved.</p>
+          </div>
+          <div class="policy d-flex gap-3 flex-column flex-md-row">
+            <a href="" class="text-black">Privacy Policy</a>
+            <a href="" class="text-black">Terms of service</a>
+            <a href="" class="text-black">Cookie Settings</a>
+          </div>
+        </div>
+      </footer>
 		</main>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
